@@ -1,16 +1,16 @@
 class Node {
   constructor(data) {
+    this.prev = null;
     this.data = data;
     this.next = null;
-    this.prev = null;
   }
 }
 
 class LinkedList {
   constructor() {
     this.head = null;
-    this.tail = null;
     this.current = null;
+    this.tail = null;
   }
 
   add(data) {
